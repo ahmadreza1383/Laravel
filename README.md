@@ -1,2 +1,2 @@
-# Laravel_Help
-Check for errors and problems in Laravel
+# Laravel Help
+انواع خطا و مشکلات در لاراول و بررسی انها
