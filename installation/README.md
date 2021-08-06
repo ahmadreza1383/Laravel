@@ -11,6 +11,30 @@ Laravel Official Link:[website laravel](https://laravel.com/)
 #Laravel, #HowTo, #HowTo_Setup_Laravel, #ubuntu, #TechBlog
 
 
+### unistall apache2
+
+```bash
+apt-get remove apache2
+```
+
+__autoremove 
+
+```bash
+sudo apt autoremove
+```
+
+__update package 
+
+```bash 
+sudo apt update
+```
+
+__upgrade package
+
+```pash
+sudo apt upgrade
+```
+
 
 ### install xampp 
 
