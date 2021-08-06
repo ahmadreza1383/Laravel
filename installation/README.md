@@ -13,3 +13,6 @@ Laravel Official Link:[website laravel](https://laravel.com/)
 
 
 ### install xampp 
+
+
+[download for ubuntu](https://www.apachefriends.org/xampp-files/7.4.22/xampp-linux-x64-7.4.22-0-installer.run)
