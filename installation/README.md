@@ -14,7 +14,7 @@ Laravel Official Link:[website laravel](https://laravel.com/)
 ### unistall apache2
 
 ```bash
-apt-get remove apache2
+sudo apt-get remove apache2
 ```
 
 __autoremove 
