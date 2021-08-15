@@ -36,3 +36,4 @@ public function boot()
 ```bash 
 composer update
 ```
+__ما با این کار کامپوسر خود را اپدیت میکنیم و تغییرات رو اعمال میکنیم__
