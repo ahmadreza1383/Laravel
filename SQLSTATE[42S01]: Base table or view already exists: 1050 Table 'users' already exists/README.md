@@ -45,7 +45,7 @@ __اگر خطا همچنان پابرجا بود کارهای زیر را انج
 config/database.php
 ```
 
-* ارایه کانکشن رو پیدا کنید و بعد کار های زیر را انجام دهید
+*  ارایه کانکشن رو پیدا کنید چیزی همانند سورس زیر
 
 ```bash
 'connections' => array(
@@ -56,9 +56,15 @@ config/database.php
         'database'  => '********',
         'username'  => '********',
         'password'  => '*******',
-        'charset'   => 'utf8',
-        'collation' => 'utf8_unicode_ci',
+        'charset'   => '****',
+        'collation' => '********(*((((',
         'prefix'    => '',
     ),
 ),
+```
+
+* بعد مقادیر زیر رو جایگزین  مقادیر قبلی کنید 
+```bash 
+'charset'   => 'utf8',
+'collation' => 'utf8_unicode_ci'
 ```
