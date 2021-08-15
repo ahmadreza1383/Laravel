@@ -31,3 +31,8 @@ public function boot()
     Schema::defaultStringLength(191);
 }
 ```
+* حال در دایرکتوری خود محیط تریمنال رو باز کرده و کد زیر را وارد کنید 
+
+```bash 
+composer update
+```
