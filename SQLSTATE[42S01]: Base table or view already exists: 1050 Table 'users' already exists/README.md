@@ -15,3 +15,19 @@ app/provider/AppServiceProvider.php
 ```bash 
 use Illuminate\Support\Facades\Schema;
 ```
+* تابع بوت رو پبدا کنید مانند سورس زیر:
+```bash 
+
+public function boot()
+{
+    //
+}
+```
+
+* سورس تابع را به این صورت تغییر دهید :
+```bash 
+public function boot()
+{
+    Schema::defaultStringLength(191);
+}
+```
