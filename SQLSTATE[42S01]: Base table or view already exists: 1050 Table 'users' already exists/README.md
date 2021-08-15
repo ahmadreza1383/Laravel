@@ -68,3 +68,7 @@ config/database.php
 'charset'   => 'utf8',
 'collation' => 'utf8_unicode_ci'
 ```
+* و بعد دوباره دستور امتحان کنید
+```bash 
+php artisan migrate
+```
