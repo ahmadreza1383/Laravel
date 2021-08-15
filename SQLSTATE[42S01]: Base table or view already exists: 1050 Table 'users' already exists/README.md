@@ -1,4 +1,5 @@
-
-### حل خطای SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table users
-
-
+### حل خطای دیتابیس
+__عنوان خطا__
+```bash
+SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table users
+```
