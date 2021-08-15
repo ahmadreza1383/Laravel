@@ -1,5 +1,5 @@
-### حل خطای دیتابیس
-__عنوان خطا__
+# حل خطای دیتابیس
+### عنوان خطا
 ```bash
 SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table users
 ```
