@@ -44,3 +44,21 @@ __اگر خطا همچنان پابرجا بود کارهای زیر را انج
 ```bash 
 config/database.php
 ```
+
+* ارایه کانکشن رو پیدا کنید و بعد کار های زیر را انجام دهید
+
+```bash
+'connections' => array(
+
+    'mysql' => array(
+        'driver'    => 'mysql',
+        'host'      => '*********',
+        'database'  => '********',
+        'username'  => '********',
+        'password'  => '*******',
+        'charset'   => 'utf8',
+        'collation' => 'utf8_unicode_ci',
+        'prefix'    => '',
+    ),
+),
+```
