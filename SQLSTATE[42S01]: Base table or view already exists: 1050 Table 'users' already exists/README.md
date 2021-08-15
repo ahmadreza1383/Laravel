@@ -70,8 +70,39 @@ config/database.php
 'charset'   => 'utf8',
 'collation' => 'utf8_unicode_ci'
 ```
-** نکته : فقط مقادیر چارست و کالکشن را جایگزین یعنی اگه سورس ما این باشد
+ نکته : فقط مقادیر چارست و کالکشن را جایگزین یعنی اگه سورس ما این باشد
 
+'connections' => array(
+
+    'mysql' => array(
+        'driver'    => 'mysql',
+        'host'      => 'Text',
+        'database'  => 'laravel',
+        'username'  => 'TextUser',
+        'password'  => 'PassUser',
+        'charset'   => 'Uf32',
+        'collation' => 'Utf32',
+        'prefix'    => '',
+    ),
+),
+```
+
+شما باید فقط مقادیر چارست و کالکشن رو جایگزین کنید یعنی به اینطورت 
+
+'connections' => array(
+
+    'mysql' => array(
+        'driver'    => 'mysql',
+        'host'      => 'Text',
+        'database'  => 'laravel',
+        'username'  => 'TextUser',
+        'password'  => 'PassUser',
+        'charset'   => 'utf8',
+        'collation' => 'utf8_unicode_ci',
+        'prefix'    => '',
+    ),
+),
+```
 
 
 * و بعد دوباره دستور امتحان کنید
