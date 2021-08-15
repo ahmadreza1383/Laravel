@@ -11,3 +11,7 @@ __مراحل زیر را دنبال کنید__
 ```bash 
 app/provider/AppServiceProvider.php
 ```
+* فایل را باز کنید و ابتدای فایل قطعه کد زیر را وارد کنید
+```bash 
+use Illuminate\Support\Facades\Schema;
+```
