@@ -70,8 +70,8 @@ config/database.php
 'charset'   => 'utf8',
 'collation' => 'utf8_unicode_ci'
 ```
- نکته : فقط مقادیر چارست و کالکشن را جایگزین یعنی اگه سورس ما این باشد
-
+ نکته : فقط مقادیر چارست و کالکشن را جایگزین  کنید یعنی اگه سورس ما این باشد
+```bash 
 'connections' => array(
 
     'mysql' => array(
@@ -88,7 +88,7 @@ config/database.php
 ```
 
 شما باید فقط مقادیر چارست و کالکشن رو جایگزین کنید یعنی به اینطورت 
-
+```bash 
 'connections' => array(
 
     'mysql' => array(
