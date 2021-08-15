@@ -105,7 +105,7 @@ config/database.php
 ```
 
 
-* و بعد دوباره دستور امتحان کنید
+* و بعد دوباره دستور زیر را امتحان کنید
 ```bash 
 php artisan migrate
 ```
