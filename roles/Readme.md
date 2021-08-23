@@ -34,3 +34,11 @@ address : config.app.php
     Spatie\Permission\PermissionServiceProvider::class,
 ];
 ```
+
+
+* مرحله سوم
+
+```bash
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+
+```
