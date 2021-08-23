@@ -20,7 +20,7 @@ config/permission.php
 ### install spatie
 
 
-* مرحله اول
+#### مرحله اول
 ‍
 ```bash
  composer require spatie/laravel-permission
