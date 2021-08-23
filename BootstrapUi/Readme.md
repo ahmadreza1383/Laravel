@@ -49,3 +49,17 @@ php artisan ui bootstrap --auth
 php artisan ui vue --auth
 php artisan ui react --auth
 ```
+
+* مرحله سوم
+
+:توجه کنید که قبل از وارد کردن دستور زیر پکیج زیر رو نصب کنید
+
+‍‍
+```bash
+
+PachageName: Npm
+
+```
+
+[نصب پکیج]()
+
