@@ -2,21 +2,8 @@
 
 مخزن لاراول جهت اموزش و بررسی انواع خطاها ایجاد شده است
 
-__Menu Repository__
+* [Errors](https://github.com/ahmadreza1383/Laravel/tree/Errors)
 
-* [Errors]()
+* [Educational](https://github.com/ahmadreza1383/Laravel/tree/Educational)
 
-* [Educational]()
-
-* [Packages]()
-
-
-
-
-
-
-
-
-
-
-
+* [Packages](https://github.com/ahmadreza1383/Laravel/tree/Packages)
