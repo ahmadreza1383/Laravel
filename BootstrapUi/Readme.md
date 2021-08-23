@@ -18,7 +18,6 @@ composer require laravel/ui
 
 :در غیر این صورت
 
-‍‍‍
 ```bash
 
 composer require laravel/ui:^2.4
