@@ -21,8 +21,6 @@ __install spatie__
 
 
 
-
-‍‍‍```bash
- composer require spatie/laravel-permission
-```
+‍```bash
+ composer require spatie/laravel-permission```
 
