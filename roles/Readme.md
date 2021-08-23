@@ -25,7 +25,7 @@ __install spatie__
 به صورت پیشفرض این دستور قرار __میگیرد__ اما اگر نبود شما اون رو قرار دهید
 ‍‍‍
 ```bash
-address : config.app.php
+Address : config.app.php
 ```
 
 ```bash 
