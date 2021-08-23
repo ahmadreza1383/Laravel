@@ -13,8 +13,10 @@ config/permission.php
 
 __install spatie__
 
+
 غغع
-‍```bash
+‍
+```bash
  composer require spatie/laravel-permission
  ```
 
