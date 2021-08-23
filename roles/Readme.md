@@ -26,7 +26,7 @@ config/permission.php
  composer require spatie/laravel-permission
  ```
 
-* مرحله دوم
+#### مرحله دوم
 
 به صورت پیشفرض این دستور قرار __میگیرد__ اما اگر نبود شما اون رو قرار دهید
 ‍‍‍
@@ -42,7 +42,7 @@ Address : config.app.php
 ```
 
 
-* مرحله سوم
+#### مرحله سوم
 
 ```bash
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
@@ -50,7 +50,7 @@ php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvid
 ```
 
 
-* مرحله چهارم 
+#### مرحله چهارم 
 
 اگر پکیج مدیریت  رو نصب نکرده اید پیشنهاد ما این است که __نصبش__ کنید
 
@@ -60,7 +60,7 @@ PackageName : bootstrap ui
 ```
 
 [نصب پکیج مدیریت](https://github.com/ahmadreza1383/Laravel/blob/Packages/BootstrapUi/Readme.md)
-* مرحله اخر
+#### مرحله اخر
 
 
 ```bash
