@@ -3,9 +3,6 @@
 __مقدمات برای نصب__
 
 اول از همه چک کنید ببینید تو ادرس زیر همچین فایل داری یا خیر 
-
-
-‍‍
 ```bash
 config/permission.php
 ```
@@ -16,11 +13,7 @@ config/permission.php
 
 __install spatie__
 
-
-
-
-
-
+*مرحله اول
 ‍```bash
  composer require spatie/laravel-permission
  ```
