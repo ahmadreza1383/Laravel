@@ -2,6 +2,6 @@
 
 __مقدمات برای نصب__
 
-__ install spatie__
+__install spatie__
 
 
