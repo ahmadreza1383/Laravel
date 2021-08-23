@@ -20,3 +20,17 @@ __install spatie__
  composer require spatie/laravel-permission
  ```
 
+* مرحله دوم
+
+به صورت پیشفرض این دستور قرار میگیرد اما اگر نبود شما اون رو قرار دهید
+
+‍‍‍```bash
+address : config.app.php
+```
+
+```bash 
+'providers' => [
+    // ...
+    Spatie\Permission\PermissionServiceProvider::class,
+];
+```
