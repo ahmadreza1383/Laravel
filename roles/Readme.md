@@ -59,7 +59,7 @@ php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvid
 PackageName : bootstrap ui
 ```
 
-[نصب پکیج مدیریت]()
+[نصب پکیج مدیریت](https://github.com/ahmadreza1383/Laravel/blob/Packages/BootstrapUi/Readme.md)
 * مرحله اخر
 
 
