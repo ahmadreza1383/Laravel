@@ -42,3 +42,24 @@ address : config.app.php
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
 
 ```
+
+
+* مرحله چهارم 
+
+اگر پکیج مدیریت  رو نصب نکرده اید پیشنهاد ما این است که نصبش کنید
+
+‍‍‍‍
+```bash
+PackageName : bootstrap ui
+```
+
+(نصب پکیج مدیریت)[]
+
+* مرحله اخر
+
+
+```bash
+
+ php artisan migrate
+
+```
