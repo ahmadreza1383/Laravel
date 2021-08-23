@@ -53,8 +53,7 @@ php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvid
 PackageName : bootstrap ui
 ```
 
-(نصب پکیج مدیریت)[]
-
+[نصب پکیج مدیریت]()
 * مرحله اخر
 
 
