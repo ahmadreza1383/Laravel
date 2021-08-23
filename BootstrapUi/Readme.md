@@ -23,3 +23,29 @@ composer require laravel/ui
 composer require laravel/ui:^2.4
 
 ```
+ 
+* مرحله دوم
+
+بسته به نیاز خودتون پکیجی رو که میخواید رو نصب کنید
+
+:ما در اینجا از پکیج زیر استفاده میکنیم
+‍‍
+
+```bash
+php artisan ui bootstrap --auth
+```
+
+:دیگر پکیج ها
+
+‍‍
+```bash
+// Generate basic scaffolding...
+php artisan ui bootstrap
+php artisan ui vue
+php artisan ui react
+
+// Generate login / registration scaffolding...
+php artisan ui bootstrap --auth
+php artisan ui vue --auth
+php artisan ui react --auth
+```
