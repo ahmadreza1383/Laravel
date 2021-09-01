@@ -202,6 +202,9 @@ class OwnerRole
 {
      $role = Role::create(['name' => 'owner']);
      $permission = Permission::create(['name' => 'owner']);
+     
+      return $next($request);
+
 }
 ```
 
@@ -221,9 +224,99 @@ php artisan serve
 
 
 ```bash 
+http://127.0.0.1:8000/register
+
+```
+
+بعد یک ثبت نام انجام دهید
+
+
+
+:بعد از اتمام ثبت نام به ادرس زیر برید
+
+
+```bash 
 http://127.0.0.1:8000/login
 
 ```
+
+ایمیل و رمز عبور خود را وارد کنید
+
+
+حالا شما رول سازنده رو  ساختید
+
+
+### دریافت رول سازنده
+
+:برای دریافت رول سازنده سورس زیر را   تغییر دهید 
+
+
+```bash
+
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
+
+
+
+class OwnerRole
+{
+     $role = Role::create(['name' => 'owner']);
+     $permission = Permission::create(['name' => 'owner']);
+     
+      return $next($request);
+
+}
+```
+
+
+:به این صورت تغییر دهید
+
+
+```bash
+
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
+
+
+
+class OwnerRole
+{
+     $user =$request->user();
+
+     $user->assignRole('owner');
+     
+     
+     return $next($request);
+
+}
+```
+
+
+یکبار دیگر ورود کنید
+
+شما رول سازنده رو دریافت کردید
+
+‍‍### بررسی رول در هنگام ورود
+
+
+
+
+
+
 
 
 
