@@ -48,6 +48,38 @@ use Spatie\Permission\Traits\HasRoles;
 ```
 
 
+ اضافه میکنیم  use و همچنین در داخل کلس هم به مقادیر یک        
+
+به این صورت 
+
+```bash
+
+    use HasApiTokens, HasRoles ,HasFactory, Notifiable;
+
+```
+
+
+:در واقع سورس ما در اخر به این صورت در میاید
+
+
+```bash
+
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
+
+
+class User extends Authenticatable
+{
+    use HasApiTokens, HasRoles ,HasFactory, Notifiable;
+}
+
+```
+
+
 
 
 
