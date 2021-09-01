@@ -38,6 +38,7 @@ class User extends Authenticatable
 
 ```
 
+  بهش اضافه  میکنیم use  اول از همه یک 
 
 
 
