@@ -38,9 +38,14 @@ class User extends Authenticatable
 
 ```
 
-  بهش اضافه  میکنیم use  اول از همه یک 
+ : بهش اضافه  میکنیم use  اول از همه یک 
 
+‍
+```bash 
 
+use Spatie\Permission\Traits\HasRoles;
+
+```
 
 
 
