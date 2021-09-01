@@ -167,7 +167,15 @@ use Spatie\Permission\Models\Role;
 ```bash
 
 
-
+class OwnerRole
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
  public function handle(Request $request, Closure $next)
     {
          $role = Role::create(['name' => 'owner']);
@@ -178,6 +186,7 @@ use Spatie\Permission\Models\Role;
         return $next($request);
         
     }
+   }
 ```
 
 :یعنی به این صورت 
@@ -197,14 +206,23 @@ use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
 
-
 class OwnerRole
 {
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+ public function handle(Request $request, Closure $next)
+  {
      $role = Role::create(['name' => 'owner']);
      $permission = Permission::create(['name' => 'owner']);
      
       return $next($request);
 
+}
 }
 ```
 
@@ -356,13 +374,23 @@ use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
 
-
 class OwnerRole
 {
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+ public function handle(Request $request, Closure $next)
+  {
      $role = Role::create(['name' => 'owner']);
      $permission = Permission::create(['name' => 'owner']);
      
       return $next($request);
+
+}
 
 }
 ```
@@ -384,9 +412,17 @@ use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
 
-
 class OwnerRole
 {
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+ public function handle(Request $request, Closure $next)
+   {
      $user =$request->user();
 
      $user->assignRole('owner');
@@ -394,6 +430,7 @@ class OwnerRole
      
      return $next($request);
 
+}
 }
 ```
 
@@ -406,9 +443,115 @@ class OwnerRole
 ### بررسی رول در هنگام ورود
 
 
+:برای بررسی هنگام ورود کافیه سورس زیر را به این صورت تغییر دهید 
+
+
+```bash
+
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
+
+class OwnerRole
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+public function handle(Request $request, Closure $next)
+   {
+     $user =$request->user();
+
+     $user->assignRole('owner');
+     
+     
+     return $next($request);
+
+}
+
+}
+```
 
 
 
+
+:به این صورت
+‍‍‍
+```bash
+
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
+
+
+
+class OwnerRole
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+    public function handle(Request $request, Closure $next)
+    {
+
+      
+        $user =$request->user();
+
+
+
+        if($user && $user->hasRole('owner')){
+
+            return $next($request);
+
+        }
+        if($user && !($user->hasRole('owner'))){
+
+            Auth::logout();
+            return redirect('login');
+
+        }
+        // return $next($request);
+        return redirect('login');
+
+
+        return $next($request);
+
+
+    }
+}
+
+
+```
+
+
+حال شما به عنوان سازنده میتونید ورود کنید
+
+
+موفق باشید :)
+
+
+اگر نمیتوانید طبق اموزش پیش برید از ویدیو ی زیر استفاده کنید
+
+
+[اموزش ویدیو ساخت رول ](https://www.aparat.com/v/ZLrXe/%D8%A2%D9%85%D9%88%D8%B2%D8%B4_spatie_%D8%AF%D8%B1_%D9%84%D8%A7%D8%B1%D8%A7%D9%88%D9%84)
 
 
 
