@@ -209,6 +209,97 @@ class OwnerRole
 ```
 
 
+
+:حال به ادرس   کرنل زیر برید 
+
+
+‍‍‍
+```bash
+
+app/Http/kernel.php
+
+```
+
+:سورس زیر را تغییر دهید
+
+
+‍‍‍
+```bash
+ protected $routeMiddleware = [
+        'auth' => \App\Http\Middleware\Authenticate::class,
+        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
+        'can' => \Illuminate\Auth\Middleware\Authorize::class,
+        'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'password.confirm' => \Illuminate\Auth\Middleware\RequirePassword::class,
+        'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
+        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+    ];
+
+```
+
+:به این صورت
+
+```bash
+
+ protected $routeMiddleware = [
+        'owner' => \App\Http\Middleware\OwnerRole::class,
+        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
+        'can' => \Illuminate\Auth\Middleware\Authorize::class,
+        'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'password.confirm' => \Illuminate\Auth\Middleware\RequirePassword::class,
+        'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
+        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+    ];
+
+```
+
+__  رو برداشتیم  auth در اینجا ما میدلور سازنده رو به ارایه اضافه کردیم و میدلور __
+
+
+
+:حال به ادرس زیر برید 
+
+
+‍‍‍
+```bash
+
+app/Http/Controllers/HomeController.php
+
+```
+
+:سورس زیر را تغییر دهید
+
+
+‍‍‍
+```bash
+
+ public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
+
+```
+
+:به این صورت
+
+```bash
+
+ public function __construct()
+    {
+        $this->middleware('owner');
+
+    }
+
+```
+
+
+
+
 :دستور زیر رو در تریمنال وارد کنید
 
 
@@ -310,7 +401,9 @@ class OwnerRole
 
 شما رول سازنده رو دریافت کردید
 
-‍‍### بررسی رول در هنگام ورود
+‍‍
+### بررسی رول در هنگام ورود
+
 
 
 
