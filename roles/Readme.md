@@ -33,7 +33,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasRoles ,HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable;
 }
 
 ```
