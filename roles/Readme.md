@@ -6,6 +6,8 @@
 
 [نصب پکیج رول ساز](https://github.com/ahmadreza1383/Laravel/tree/Packages/roles)
 
+[نصب پکیج مدیریت پنل](https://github.com/ahmadreza1383/Laravel/tree/Packages/BootstrapUi)
+
 ### توضیحات 
 
 در اینجا ما قصد داریم که یک رول به نام سازنده ایجاد کنیم که فقط کاربرانی که این رول را دارند اجازه ورود به پنل مدیریت سایت را داشته باشند
@@ -204,7 +206,24 @@ class OwnerRole
 ```
 
 
+:دستور زیر رو در تریمنال وارد کنید
 
+
+
+‍‍‍
+```bash
+
+php artisan serve
+
+```
+
+:در مرورگر خود ادرس زیر رو وارد کنید
+
+
+```bash 
+http://127.0.0.1:8000/login
+
+```
 
 
 
