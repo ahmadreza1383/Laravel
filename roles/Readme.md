@@ -38,6 +38,9 @@ class User extends Authenticatable
 
 ```
 
+__توجه داشته باشید که در اینجا فقط قسمتی از سورس قرار گرفته است و این به معنای سورس اصلی نیست__
+
+
  : بهش اضافه  میکنیم use  اول از همه یک 
 
 ‍
@@ -78,6 +81,7 @@ class User extends Authenticatable
 }
 
 ```
+
 
 
 
