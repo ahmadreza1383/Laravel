@@ -22,11 +22,14 @@ app/Models/User.php
 :در کلاس زیر چیزی همانند سورس پایین داریم
 
 
+
 ‍‍‍```bash
+
 class User extends Authenticatable
 {
     use HasApiTokens, HasRoles ,HasFactory, Notifiable;
 }
+
 ```
 
 
