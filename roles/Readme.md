@@ -103,6 +103,7 @@ php artisan make:middleware OwnerRole
 
 :بعد از ساخت به ادرس زیر برید
 
+
 ```bash
 
 app/Http/Middleware/OwnerRole.php
@@ -112,7 +113,8 @@ app/Http/Middleware/OwnerRole.php
 :چیزی همانند سورس زیر است
 
 
-‍‍‍```bash 
+‍‍‍
+```bash 
 
 <?php
 
@@ -147,6 +149,7 @@ class OwnerRole
  : های زیر را  بهش اضافه  میکنیم  use   
 
 
+
 ```bash
 
 use Spatie\Permission\Models\Permission;
@@ -156,6 +159,7 @@ use Spatie\Permission\Models\Role;
 
 
 :سورس زیر را در کلس بهش اضافه میکنیم 
+
 
 
 ```bash
