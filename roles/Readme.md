@@ -178,6 +178,32 @@ use Spatie\Permission\Models\Role;
     }
 ```
 
+:یعنی به این صورت 
+
+
+‍‍‍
+```bash
+
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
+
+
+
+class OwnerRole
+{
+     $role = Role::create(['name' => 'owner']);
+     $permission = Permission::create(['name' => 'owner']);
+}
+```
+
+
 
 
 
