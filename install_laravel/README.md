@@ -10,4 +10,14 @@
 
 [ادرس سایت اپاچی سرور](https://www.apachefriends.org)
 
+ما از نسخه 7.4.2 استفاده میکنیم
+
+
+[دانلود نسخه](https://www.apachefriends.org/xampp-files/7.4.23/xampp-linux-x64-7.4.23-0-installer.run)
+
+
+
+
+
+
 
