@@ -37,7 +37,7 @@ ____________________________
   ‍‍‍
   ```bash
   
-  php --version
+ php --version
   
   ```
   
@@ -45,5 +45,6 @@ ____________________________
 
 ‍‍
 ```bash
- php: command not found
+
+php: command not found
 ```
