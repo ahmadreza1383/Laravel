@@ -80,3 +80,17 @@ systemctl restart apache2
 
 ```
 
+
+### نصب بسته کامپوسر
+
+خب الان میرسیم به نصب پکیج کامپوسر
+
+ رو منتقل میکنیم composer.phar اول از همه کامپوسر رو نصب میکنیم و فایل  
+
+‍‍‍```bash
+
+sudo apt install curl
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+
+```
