@@ -91,7 +91,9 @@ systemctl restart apache2
 ```bash
 
 sudo apt install curl
+
 curl -sS https://getcomposer.org/installer | php
+
 sudo mv composer.phar /usr/local/bin/composer
 
 ```
