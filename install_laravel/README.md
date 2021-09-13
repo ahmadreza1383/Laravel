@@ -138,6 +138,7 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
  : خب الان پیکربندی رو بارگذاری مجدد میکنیم 
  
  ‍‍‍
+ 
  ```bash
  source ~/.bashrc
 
@@ -145,6 +146,7 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 و الان پژواک پت رو برای کامپوسر برمیگردانیم
 
 ‍‍
+
 ```bash
 source ~/.bashrc
 
@@ -155,7 +157,8 @@ source ~/.bashrc
 : و الان این دستور رو بزنید 
 
 
-‍‍‍```bash
+‍‍‍
+```bash
  echo $PATH
 
 ```
