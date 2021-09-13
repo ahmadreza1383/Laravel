@@ -97,3 +97,17 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
 ```
+:ورژن کامپوسر خود را چک میکنیم 
+
+‍‍‍
+```bash
+composer --version
+
+
+```
+
+
+
+
+
+
