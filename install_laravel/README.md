@@ -71,4 +71,12 @@ sudo nano php.ini
 cgi.fix_pathinfo=0
 
 ```
+اپاچی رو ریستارت کنید 
+
+‍‍‍
+```bash
+
+systemctl restart apache2
+
+```
 
