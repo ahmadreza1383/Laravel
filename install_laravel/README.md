@@ -87,7 +87,8 @@ systemctl restart apache2
 
  رو منتقل میکنیم composer.phar اول از همه کامپوسر رو نصب میکنیم و فایل  
 
-‍‍‍```bash
+‍‍‍
+```bash
 
 sudo apt install curl
 curl -sS https://getcomposer.org/installer | php
